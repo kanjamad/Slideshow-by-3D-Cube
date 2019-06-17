@@ -5,6 +5,10 @@
 ### HTML structure
 The cube has six divs (or “sides”), absolutely positioned. The class names correspond to the initial positions of the sides (back, left, right, top, bottom, front).
 
+![ axes are oriented in a web browser](images/axes.png  " axes ")
+
+#### A right-handed three-dimensional Cartesian coordinate system with the z-axis pointing towards the viewer. (Image: Wikimedia Commons) (View large version)
+
 
 ### Additional Resources
 1. <a href="https://css-tricks.com/simplifying-css-cubes-custom-properties/" target="_blank">Simplifying CSS Cubes with Custom Properties</a>
