@@ -33,6 +33,32 @@ The cube has six divs (or “sides”), absolutely positioned. The class names c
 
 ```
 
+### Front and Back
+Place parts of cube on their position in 3D space.
+* Move this face from center to front
+* Translate this element along Z 
+* Insert here a positive value that it will move element close to user and opposite in case of negative value.
+* So as a value we need to insert 21vw.
+* By default phrase is placed in the center of 3D environment
+* Defined width of cube as 42vw an actually a length of cube should be 42 vw 
+* In order to get it shape of a real cube in fact this is going to be cuboid not the cube but for simplicity
+* So to make lenght 42vw, need to move Front-face and  Back-face by 21vw because they are place in the center of view
+
+
+```
+.front {
+    transform: translateZ(21vw);
+}
+
+```
+
+```
+.viewport {
+    width: 42vw;
+    height: 21vw;
+}
+
+```
 
 ### Additional Resources
 1. <a href="https://css-tricks.com/simplifying-css-cubes-custom-properties/" target="_blank">Simplifying CSS Cubes with Custom Properties</a>
@@ -42,5 +68,6 @@ The cube has six divs (or “sides”), absolutely positioned. The class names c
 5. <a href="https://css-tricks.com/fun-viewport-units/" target="_blank">Fun with Viewport Units</a>
 6. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/perspective" target="_blank">The perspective CSS property</a>
 7. <a href="https://www.w3schools.com/cssref/css3_pr_transform-style.asp" target="_blank">CSS transform- style property</a>
+8. <a href="https://codepen.io/team/css-tricks/pen/ebb6b5a5cec86aa04168f03e26c7501c" target="_blank">CSS transform</a>
 
 
