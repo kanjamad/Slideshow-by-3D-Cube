@@ -33,6 +33,11 @@
     background-color: #ccc;
     transform-style: preserve-3d;
     position: relative;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
 }
 
 .face {
@@ -51,4 +56,12 @@
     -moz-transform: translateZ(21vw);
     -ms-transform: translateZ(21vw);
     -o-transform: translateZ(21vw);
+}
+
+.back {
+    transform: translateZ(-21vw) rotateY(180deg);
+    -webkit-transform: translateZ(-21vw) rotateY(180deg);
+    -moz-transform: translateZ(-21vw) rotateY(180deg);
+    -ms-transform: translateZ(-21vw) rotateY(180deg);
+    -o-transform: translateZ(-21vw) rotateY(180deg);
 }

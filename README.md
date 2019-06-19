@@ -46,19 +46,27 @@ Place parts of cube on their position in 3D space.
 
 
 ```
+.cube {
+     transform: rotateY(0deg);
+}
+
 .front {
     transform: translateZ(21vw);
 }
 
-```
-
-```
 .viewport {
     width: 42vw;
     height: 21vw;
 }
 
+.back {
+    transform: translateZ(-21vw) rotateY(180deg);
+}
 ```
+![ rotate front and back ](images/ratateY.gif  "  rotate front and back ")
+*  Change value rotate.
+* Will see value is increasing and elements are moving accordindingly in 3-D space
+
 
 ### Additional Resources
 1. <a href="https://css-tricks.com/simplifying-css-cubes-custom-properties/" target="_blank">Simplifying CSS Cubes with Custom Properties</a>
