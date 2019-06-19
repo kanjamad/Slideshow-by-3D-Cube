@@ -1,6 +1,8 @@
 console.log("Hi....!")
 
 let x = 0;
+let bool = false;
+let interval;
 
 const rotate = () => {
     const cubes = document.querySelectorAll('.cube');
@@ -8,11 +10,32 @@ const rotate = () => {
     // console.log(x);
 }
 
+const changePlayPause = () => {
+    const i = document.querySelector('.play-pause i');
+    const cls = i.classList[1];
+    // console.log(cls);
+    if (cls === 'fa-play') {
+        i.classList.remove('fa-play');
+        i.classList.add('fa-pause');
+    } else {
+        i.classList.remove('fa-pause');
+        i.classList.add('fa-play');
+    }
+}
+
 const playPause = () => {
-    setInterval(() => {
-        x -= 90;
-        rotate();
-    }, 3000);
+    if (!bool){
+        interval = setInterval(() => {
+            x -= 90;
+            rotate();
+        }, 3000);
+       
+        bool = true;
+    } else {
+        clearInterval(interval);
+       
+        bool = false;
+    }
 }
 
 document.querySelector('.left-arrow').addEventListener('click', () => {
@@ -54,5 +77,6 @@ document.querySelector('.right-arrow').addEventListener('mouseout', () => {
 document.querySelector('.play-pause').addEventListener('click', () => {
     // console.log("clicked");
     playPause();
+    changePlayPause();
 
 })

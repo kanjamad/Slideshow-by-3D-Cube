@@ -162,11 +162,23 @@ document.querySelector('.left-arrow').addEventListener('mouseout', () => {
 ### Button Play/Pause
 * Run slideshow automatically
 * Used javaScript function setInterval() : to execute function over and over again
-* By defalt one slide show play automatically cube should be rotated from right to left
-* Click and wait for 3 seconds
+* By defalt one slide show play automatically cubes should be rotated from right to left
+* Click to play and wait for 3 seconds
+* Used javaScript function clearInterval()
 
 ```
-
+const playPause = () => {
+    if (!bool){
+        interval = setInterval(() => {
+            x -= 90;
+            rotate();
+        }, 3000);
+        bool = true;
+    } else {
+        clearInterval(interval);
+        bool = false;
+    }
+}
 
 ```
 
