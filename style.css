@@ -226,6 +226,9 @@
     background-color: rgba(42, 38, 36, .8);
 }
 
+.control i {
+    pointer-events: none;
+}
 
 .left-arrow {
     top: 50%;

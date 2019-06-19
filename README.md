@@ -133,6 +133,15 @@ document.querySelector('.left-arrow').addEventListener('click', () => {
 ![ rotate click left arrow ](images/90deg.gif  " rotate click left arrow ")
 
 
+### mouse over & mouse out
+* CSS style : Turn off event pointer from 'i' problem fix when shake slightly mouse cubes still rotate
+
+```
+.control i {
+    pointer-events: none;
+}
+```
+
 ### Additional Resources
 1. <a href="https://css-tricks.com/simplifying-css-cubes-custom-properties/" target="_blank">Simplifying CSS Cubes with Custom Properties</a>
 2. <a href="https://www.smashingmagazine.com/2016/07/front-end-challenge-accepted-css-3d-cube/" target="_blank">Front-End Challenge Accepted: CSS 3D Cube</a>
