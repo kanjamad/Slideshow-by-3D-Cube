@@ -33,11 +33,11 @@
     background-color: #ccc;
     transform-style: preserve-3d;
     position: relative;
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
+    transform: rotateY(-90deg);
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
 }
 
 .cube-2 {
@@ -105,6 +105,20 @@
     -o-transform: translateX(-21vw) rotateY(-90deg);
 }
 
+.cube-1 .left {
+    background: url(images/slide-img-3.jpg) no-repeat 50% 0;
+    background-size: cover; 
+}
+.cube-2 .left {
+    background: url(images/slide-img-3.jpg) no-repeat 50% -7vw;
+    background-size: cover; 
+}
+.cube-3 .left {
+    background: url(images/slide-img-3.jpg) no-repeat 50% -14vw;
+    background-size: cover; 
+}
+
+
 .right {
     transform: translateX(21vw) rotateY(90deg);
     -webkit-transform: translateX(21vw) rotateY(90deg);
@@ -112,6 +126,20 @@
     -ms-transform: translateX(21vw) rotateY(90deg);
     -o-transform: translateX(21vw) rotateY(90deg);
 }
+
+.cube-1 .right {
+    background: url(images/slide-img-4.jpg) no-repeat 50% 0;
+    background-size: cover; 
+}
+.cube-2 .right {
+    background: url(images/slide-img-4.jpg) no-repeat 50% -7vw;
+    background-size: cover; 
+}
+.cube-3 .right {
+    background: url(images/slide-img-4.jpg) no-repeat 50% -14vw;
+    background-size: cover; 
+}
+
 
 .top {
     height: 42vw;
