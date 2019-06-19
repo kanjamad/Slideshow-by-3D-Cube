@@ -13,3 +13,9 @@ document.querySelector('.left-arrow').addEventListener('click', () => {
     x += 90;
     rotate();
 });
+
+document.querySelector('.right-arrow').addEventListener('click', () => {
+    // console.log("click on right!")
+    x -= 90;
+    rotate();
+});
