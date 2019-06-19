@@ -1,6 +1,9 @@
 # CUBE CSS-3D
 * This Project I'll create slideshow represented by 3D cube.
 * Project will be based on HTML, CSS and JavaScript.
+* Hover left arrow or right arrow cube will be rotated.
+* Click play : slide will start show automatically or can say each cube will be start rotated.
+* Click pause : slide will be stop. 
 
 ### HTML structure
 The cube has six divs (or “sides”), absolutely positioned. The class names correspond to the initial positions of the sides (back, left, right, top, bottom, front).
@@ -66,6 +69,33 @@ Place parts of cube on their position in 3D space.
 ![ rotate front and back ](images/ratateY.gif  "  rotate front and back ")
 *  Change value rotate.
 * Will see value is increasing and elements are moving accordindingly in 3-D space
+
+
+### click left and right arrow
+* Rotate 3 cube.
+* ES6 Cover it back to an Array using; Array.from() or using the spread operator ...
+* Loop : forEach
+* Transition nicer : style CSS 
+
+
+```
+
+   const cubes = document.querySelectorAll('.cube');
+    console.log(cubes); //NodeList(3) [div.cube.cube-1, div.cube.cube-2, div.cube.cube-3]
+
+    //ES6 Cover NodeList back to an Array using by using the spread operator ...
+    var backToArray= [...cubes]
+    console.log(backToArray); //(3) [div.cube.cube-1, div.cube.cube-2, div.cube.cube-3]
+
+
+
+    //ES6 Cover NodeList back to an Array using Array.from()
+    var array = Array.from(cubes)
+    console.log(array); //(3) [div.cube.cube-1, div.cube.cube-2, div.cube.cube-3]
+
+```
+
+
 
 
 ### Additional Resources

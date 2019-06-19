@@ -10,6 +10,7 @@
     height: 10vw;
 }
 
+
 .container {
     height: 100vh;
     width: 100%;
@@ -52,11 +53,6 @@
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
     position: relative;
-    transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
 }
 
 .cube-2 {
