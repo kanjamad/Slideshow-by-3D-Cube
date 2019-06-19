@@ -33,11 +33,11 @@
     background-color: #ccc;
     transform-style: preserve-3d;
     position: relative;
-    transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 
 .cube-2 {
@@ -81,6 +81,21 @@
     -ms-transform: translateZ(-21vw) rotateY(180deg);
     -o-transform: translateZ(-21vw) rotateY(180deg);
 }
+
+
+.cube-1 .back {
+    background: url(images/slide-img-2.jpg) no-repeat 50% 0;
+    background-size: cover; 
+}
+.cube-2 .back {
+    background: url(images/slide-img-2.jpg) no-repeat 50% -7vw;
+    background-size: cover; 
+}
+.cube-3 .back {
+    background: url(images/slide-img-2.jpg) no-repeat 50% -14vw;
+    background-size: cover; 
+}
+
 
 .left {
     transform: translateX(-21vw) rotateY(-90deg);
