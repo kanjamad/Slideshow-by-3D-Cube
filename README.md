@@ -158,6 +158,18 @@ document.querySelector('.left-arrow').addEventListener('mouseout', () => {
 
 ```
 
+
+### Button Play/Pause
+* Run slideshow automatically
+* Used javaScript function setInterval() : to execute function over and over again
+* By defalt one slide show play automatically cube should be rotated from right to left
+* Click and wait for 3 seconds
+
+```
+
+
+```
+
 ### Additional Resources
 1. <a href="https://css-tricks.com/simplifying-css-cubes-custom-properties/" target="_blank">Simplifying CSS Cubes with Custom Properties</a>
 2. <a href="https://www.smashingmagazine.com/2016/07/front-end-challenge-accepted-css-3d-cube/" target="_blank">Front-End Challenge Accepted: CSS 3D Cube</a>

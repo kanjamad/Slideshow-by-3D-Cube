@@ -8,6 +8,13 @@ const rotate = () => {
     // console.log(x);
 }
 
+const playPause = () => {
+    setInterval(() => {
+        x -= 90;
+        rotate();
+    }, 3000);
+}
+
 document.querySelector('.left-arrow').addEventListener('click', () => {
     // console.log("click on left")
     x += 90;
@@ -43,3 +50,9 @@ document.querySelector('.right-arrow').addEventListener('mouseout', () => {
     x += 25;
     rotate();
 });
+
+document.querySelector('.play-pause').addEventListener('click', () => {
+    // console.log("clicked");
+    playPause();
+
+})
