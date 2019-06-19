@@ -29,11 +29,11 @@ const playPause = () => {
             x -= 90;
             rotate();
         }, 3000);
-       
+        changePlayPause();
         bool = true;
     } else {
         clearInterval(interval);
-       
+        changePlayPause();
         bool = false;
     }
 }
@@ -77,6 +77,4 @@ document.querySelector('.right-arrow').addEventListener('mouseout', () => {
 document.querySelector('.play-pause').addEventListener('click', () => {
     // console.log("clicked");
     playPause();
-    changePlayPause();
-
 })
