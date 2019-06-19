@@ -5,6 +5,11 @@
 * Click play : slide will start show automatically or can say each cube will be start rotated.
 * Click pause : slide will be stop. 
 
+* [Link to project hosted on Netlify](https://cubes-css-3d.netlify.com/)
+
+
+![ finsh ](images/done-p.gif  "finsh ")
+
 ### HTML structure
 The cube has six divs (or “sides”), absolutely positioned. The class names correspond to the initial positions of the sides (back, left, right, top, bottom, front).
 
