@@ -42,6 +42,9 @@ document.querySelector('.left-arrow').addEventListener('click', () => {
     // console.log("click on left")
     x += 90;
     rotate();
+    if (bool) {
+        playPause();
+    }
 });
 
 document.querySelector('.left-arrow').addEventListener('mouseover', () => {
@@ -60,6 +63,9 @@ document.querySelector('.right-arrow').addEventListener('click', () => {
     // console.log("click on right!")
     x -= 90;
     rotate();
+    if (bool) {
+        playPause();
+    }
 });
 
 document.querySelector('.right-arrow').addEventListener('mouseover', () => {

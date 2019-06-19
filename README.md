@@ -181,6 +181,21 @@ const playPause = () => {
 }
 
 ```
+* Slide show run automatically
+* Click the arrow left or right : slideshow should be stop
+* if statement: check slide show run automatically or not 
+
+```
+document.querySelector('.left-arrow').addEventListener('click', () => {
+    // console.log("click on left")
+    x += 90;
+    rotate();
+    if (bool) {
+        playPause();
+    }
+});
+
+```
 
 ### Additional Resources
 1. <a href="https://css-tricks.com/simplifying-css-cubes-custom-properties/" target="_blank">Simplifying CSS Cubes with Custom Properties</a>
