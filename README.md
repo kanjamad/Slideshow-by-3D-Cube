@@ -75,7 +75,7 @@ Place parts of cube on their position in 3D space.
 * Rotate 3 cube.
 * ES6 Cover it back to an Array using; Array.from() or using the spread operator ...
 * Loop : forEach
-* Transition nicer : style CSS 
+* Transition nicer : use transition in style CSS because on 1st click is happend only one I indicated as a value just 90 degrees then on 2nd click is already rotated by 90 degrees.So that's why don't have other rotation.
 
 
 ```
@@ -87,15 +87,50 @@ Place parts of cube on their position in 3D space.
     var backToArray= [...cubes]
     console.log(backToArray); //(3) [div.cube.cube-1, div.cube.cube-2, div.cube.cube-3]
 
-
-
     //ES6 Cover NodeList back to an Array using Array.from()
     var array = Array.from(cubes)
     console.log(array); //(3) [div.cube.cube-1, div.cube.cube-2, div.cube.cube-3]
 
 ```
+```
+document.querySelector('.left-arrow').addEventListener('click', () => {
+    // console.log("click on left")
+    const cubes = document.querySelectorAll('.cube');
+    console.log(cubes);
+    [...cubes].forEach(cube => cube.style.transform = 'rotateY(90deg');
+});
+
+```
+* style CSS : use different delay time 
+```
+.cube-1 {
+    transition: transform .4s;
+    -webkit-transition: transform .4s;
+    -moz-transition: transform .4s;
+    -ms-transition: transform .4s;
+    -o-transition: transform .4s;
+}
+
+.cube-2 {
+    z-index: 10;
+    transition: transform .4s .2s;
+    -webkit-transition: transform .4s .2s;
+    -moz-transition: transform .4s .2s;
+    -ms-transition: transform .4s .2s;
+    -o-transition: transform .4s .2s;
+}
+
+.cube-3 {
+    transition: transform .4s .4s;
+    -webkit-transition: transform .4s .4s;
+    -moz-transition: transform .4s .4s;
+    -ms-transition: transform .4s .4s;
+    -o-transition: transform .4s .4s;
+}
 
 
+```
+![ rotate click left arrow ](images/90deg.gif  " rotate click left arrow ")
 
 
 ### Additional Resources

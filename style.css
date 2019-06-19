@@ -55,8 +55,29 @@
     position: relative;
 }
 
+.cube-1 {
+    transition: transform .4s;
+    -webkit-transition: transform .4s;
+    -moz-transition: transform .4s;
+    -ms-transition: transform .4s;
+    -o-transition: transform .4s;
+}
+
 .cube-2 {
     z-index: 10;
+    transition: transform .4s .2s;
+    -webkit-transition: transform .4s .2s;
+    -moz-transition: transform .4s .2s;
+    -ms-transition: transform .4s .2s;
+    -o-transition: transform .4s .2s;
+}
+
+.cube-3 {
+    transition: transform .4s .4s;
+    -webkit-transition: transform .4s .4s;
+    -moz-transition: transform .4s .4s;
+    -ms-transition: transform .4s .4s;
+    -o-transition: transform .4s .4s;
 }
 
 .face {
