@@ -31,3 +31,15 @@ document.querySelector('.right-arrow').addEventListener('click', () => {
     x -= 90;
     rotate();
 });
+
+document.querySelector('.right-arrow').addEventListener('mouseover', () => {
+    // console.log(" on mouseover")
+    x -= 25;
+    rotate();
+});
+
+document.querySelector('.right-arrow').addEventListener('mouseout', () => {
+    // console.log(" on mouseover")
+    x += 25;
+    rotate();
+});

@@ -133,13 +133,29 @@ document.querySelector('.left-arrow').addEventListener('click', () => {
 ![ rotate click left arrow ](images/90deg.gif  " rotate click left arrow ")
 
 
-### mouse over & mouse out
+### Mouse over & Mouse out
 * CSS style : Turn off event pointer from 'i' problem fix when shake slightly mouse cubes still rotate
-
+* Hover arrow cubes will be rotate slide
+* Mouse out cubes will be back to default position
 ```
 .control i {
     pointer-events: none;
 }
+```
+
+```
+document.querySelector('.left-arrow').addEventListener('mouseover', () => {
+    // console.log(" on mouseover")
+    x += 25;
+    rotate();
+});
+
+document.querySelector('.left-arrow').addEventListener('mouseout', () => {
+    // console.log(" on mouseover")
+    x -= 25;
+    rotate();
+});
+
 ```
 
 ### Additional Resources
